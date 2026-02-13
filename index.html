@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodQI - Train Hard, Eat Smart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #000;
+            color: #f5f5f7;
+            line-height: 1.6;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            background: linear-gradient(135deg, #fff 0%, #f5f5f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 32px;
+            font-weight: 500;
+            color: #86868b;
+            margin-bottom: 40px;
+
+        .cta-button {
+            display: inline-block;
+            background: #0071e3;
+            color: white;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 980px;
+            font-size: 19px;
+            font-weight: 500;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background: #0077ed;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section {
+            margin-bottom: 100px;
+        }
+
+        .section h2 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #f5f5f7;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature {
+            background: #1d1d1f;
+            padding: 40px;
+            border-radius: 18px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+        }
+
+        .feature-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #f5f5f7;
+        }
+
+        .feature p {
+            font-size: 17px;
+            color: #86868b;
+            line-height: 1.5;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 56px;
+            font-weight: 700;
+            color: #0071e3;
+            margin-bottom: 8px;
+        }
+
+        .stat p {
+            font-size: 19px;
+            color: #86868b;
+        }
+
+        footer {
+            background: #1d1d1f;
+            padding: 40px 20px;
+            text-align: center;
+            color: #86868b;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .tagline {
+                font-size: 24px;
+            }
+
+            .section h2 {
+                font-size: 36px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .stat h3 {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>FoodQI</h1>
+        <p class="tagline">Train Hard, Eat Smart</p>
+        <p style="font-size: 21px; color: #86868b; max-width: 600px; margin-bottom: 20px;">
+            Track your nutrition effortlessly with AI-powered food analysis. Know exactly what you're eating.
+        </p>
+        <a href="https://apps.apple.com" class="cta-button">Download on the App Store</a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Powerful Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <h3>Instant Analysis</h3>
+                    <p>Take a photo of your meal and get instant nutrition information powered by advanced AI.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Daily Tracking</h3>
+                    <p>Monitor your calories, protein, carbs, and fats throughout the day with beautiful summaries.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <h3>History & Insights</h3>
+                    <p>View your nutrition history and track your progress over time with detailed analytics.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Your data is stored securely and privately. We never share your personal information.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Get results in seconds. No manual input required. Just snap and track.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Fitness Ready</h3>
+                    <p>Perfect for athletes, bodybuilders, and anyone serious about their nutrition goals.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Why FoodQI?</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>5s</h3>
+                    <p>Average scan time</p>
+                </div>
+                <div class="stat">
+                    <h3>95%+</h3>
+                    <p>Accuracy rate</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Always available</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="text-align: center;">
+            <h2>Ready to Start?</h2>
+            <p style="font-size: 21px; color: #86868b; margin-bottom: 40px;">
+                Join thousands of users tracking their nutrition the smart way.
+            </p>
+            <a href="https://apps.apple.com" class="cta-button">Get FoodQI Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FoodQI. All rights reserved.</p>
+        <p style="margin-top: 16px;">
+            <a href="support.html" style="color: #0071e3; text-decoration: none;">Support</a> • 
+            <a href="mailto:support@foodqi.app" style="color: #0071e3; text-decoration: none;">Contact</a>
+        </p>
+    </footer>
+</body>
+</html>
